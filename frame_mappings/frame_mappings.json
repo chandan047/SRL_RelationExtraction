@@ -1,0 +1,312 @@
+{
+    "org:alternate_names": false,
+    "org:city_of_headquarters": {
+        "Businesses": {
+            "LUs": true,
+            "subj": "Business_name",
+            "obj": "Place"
+        }
+    },
+    "org:country_of_headquarters": {
+        "Businesses": {
+            "LUs": true,
+            "subj": "Business_name",
+            "obj": "Place"
+        }
+    },
+    "org:dissolved": false,
+    "org:founded": {
+        "Intentionally_create": {
+            "LUs": ["found.v", "establish.v", "set up.v"],
+            "subj": "Creator",
+            "obj": "Created_entity"
+        },
+        "Creating": {
+            "LUs": true,
+            "subj": "Creator",
+            "obj": "Created_entity"
+        }
+    },
+    "org:founded_by": {
+        "Intentionally_create": {
+            "LUs": ["found.v", "establish.v", "set up.v"],
+            "subj": "Created_entity",
+            "obj": "Creator"
+        },
+        "Creating": {
+            "LUs": true,
+            "subj": "Created_entity",
+            "obj": "Creator"
+        }
+    },
+    "org:member_of": {
+        "Membership":{
+            "LUs": ["member.n"],
+            "subj": "Member",
+            "obj": "Group"
+        }
+    },
+    "org:members": {
+        "Membership":{
+            "LUs": ["member.n"],
+            "subj": "Group",
+            "obj": "Member"
+        }
+    },
+    "org:number_of_employees/members": {
+        "Employing": {
+            "LUs": ["employ.v"],
+            "subj": "Employer",
+            "obj": "Employee"
+        }
+    },
+    "org:parents": {
+        "Part_whole": {
+            "LUs": ["part.n"],
+            "subj": "Name",
+            "obj": "Whole"
+        },
+        "Getting": {
+            "LUs": ["acquire.v", "acquisition [act].n"],
+            "subj": "Theme",
+            "obj": "Recipient"
+        }
+    },
+    "org:political/religious_affiliation": false,
+    "org:shareholders": false,
+    "org:stateorprovince_of_headquarters": {
+        "Businesses": {
+            "LUs": true,
+            "subj": "Business_name",
+            "obj": "Place"
+        }
+    },
+    "org:subsidiaries": false,
+    "org:top_members/employees": {
+        "Appellations": {
+            "LUs": true,
+            "subj": "Context",
+            "obj": "Name"
+        }
+    },
+    "org:website": false,
+    "per:age": {
+        "Age": {
+            "LUs": true,
+            "subj": "Entity",
+            "obj": "Age"
+        },
+        "Death": {
+            "LUs": true,
+            "subj": "Protagonist",
+            "obj": false
+        },
+    },
+    "per:alternate_names": {
+        "Appellations": {
+            "LUs": true,
+            "subj": "Name",
+            "obj": "Title"
+        }
+    },
+    "per:cause_of_death": {
+        "Death": {
+            "LUs": true,
+            "subj": "Protagonist",
+            "obj": "Cause"
+        },
+        "Killing": {
+            "LUs": true,
+            "subj": "Victim",
+            "obj": "Cause"
+        
+        }
+    },
+    "per:charges": {
+        "Verdict": {
+            "LUs": ["convict.v", "guilty.a"],
+            "subj": "Defendant",
+            "obj": "Charges"
+        },
+        "Killing": {
+            "LUs": true,
+            "subj": "Killer",
+            "obj": "Cause"
+        },
+        "Statement": {
+            "LUs": ["allegation.n", "allege.v"],
+            "subj": "Topic",
+            "obj": "Message"
+        },
+        "Sentencing": {
+            "LUs": ["sentence.n", "sentence.v"],
+            "subj": "Convict",
+            "obj": "Offense"
+        }
+    },
+    "per:children": {
+        "Kinship:1": {
+            "LUs": ["child.n", "daughter.n", "son.n", "offspring.n", "stepson.n", "stepdaughter.n"],
+            "subj": "Alter",
+            "obj": "Ego"
+        }, 
+        "Kinship:2": {
+            "LUs": ["dad.n", "daddy.n", "father.n", "mom.n", "mother.n", "parent.n"],
+            "subj": "Ego",
+            "obj": "Alter"
+        }
+    },
+    "per:cities_of_residence": false,
+    "per:city_of_birth": {
+        "Being_born": {
+            "LUs": true,
+            "subj": "Child",
+            "obj": "Place"
+        }
+    },
+    "per:city_of_death": {
+        "Death": {
+            "LUs": true,
+            "subj": "Protagonist",
+            "obj": "Place"
+        },
+        "Killing": {
+            "LUs": true,
+            "subj": "Victim",
+            "obj": "Place"
+        
+        }
+    },
+    "per:countries_of_residence": false,
+    "per:country_of_birth": {
+        "Being_born": {
+            "LUs": true,
+            "subj": "Child",
+            "obj": "Place"
+        }
+    },
+    "per:country_of_death": {
+        "Death": {
+            "LUs": true,
+            "subj": "Protagonist",
+            "obj": "Place"
+        },
+        "Killing": {
+            "LUs": true,
+            "subj": "Victim",
+            "obj": "Place"
+        
+        }
+    },
+    "per:date_of_birth": {
+        "Being_born": {
+            "LUs": true,
+            "subj": "Child",
+            "obj": "Time"
+        }
+    },
+    "per:date_of_death": {
+        "Death": {
+            "LUs": true,
+            "subj": "Protagonist",
+            "obj": "Time"
+        },
+        "Killing": {
+            "LUs": true,
+            "subj": "Victim",
+            "obj": "Time"
+        
+        }
+    },
+    "per:employee_of": {
+        "Leadership": {
+            "LUs": true,
+            "subj": "Leader",
+            "obj": "Governed"
+        },
+        "Employing": {
+            "LUs": ["employee.n"],
+            "subj": "Employee",
+            "obj": "Employer"
+        }
+    },
+    "per:origin": false,
+    "per:other_family": false,
+    "per:parents": {
+        "Kinship:1": {
+            "LUs": ["child.n", "daughter.n", "son.n", "offspring.n", "stepson.n", "stepdaughter.n"],
+            "subj": "Ego",
+            "obj": "Alter"
+        }, 
+        "Kinship:2": {
+            "LUs": ["dad.n", "daddy.n", "father.n", "mom.n", "mother.n", "parent.n", "stepson.n"],
+            "subj": "Alter",
+            "obj": "Ego"
+        }
+    },
+    "per:religion": {
+        "People_by_religion": {
+            "LUs": true,
+            "subj": "Person",
+            "obj": "Religion"
+        }
+    },
+    "per:schools_attended": {
+        "Education_teaching": {
+            "LUs": true,
+            "subj": "Student",
+            "obj": "Institution"
+        }
+    },
+    "per:siblings": {
+        "Kinship": {
+            "LUs": ["brother.n", "sister.n", "cousin.n", "sibling.n", "stepbrother.n", "stepsister.n"],
+            "subj": "Ego",
+            "obj": "Alter"
+        }
+    },
+    "per:spouse": {
+        "Personal_relationship:1": {
+            "LUs": ["husband.n", "wife.n", "mate.n", "partner.n", "significant other.n", "spouse.n"],
+            "subj": "Partner_1",
+            "obj": "partner_2"
+        },
+        "Personal_relationship:2": {
+            "LUs": ["husband.n", "wife.n", "mate.n", "partner.n", "significant other.n", "spouse.n"],
+            "subj": "Partner_2",
+            "obj": "partner_1"
+        }
+    },
+    "per:stateorprovince_of_birth": {
+        "Being_born": {
+            "LUs": true,
+            "subj": "Child",
+            "obj": "Place"
+        }
+    },
+    "per:stateorprovince_of_death": {
+        "Death": {
+            "LUs": true,
+            "subj": "Protagonist",
+            "obj": "Place"
+        },
+        "Killing": {
+            "LUs": true,
+            "subj": "Victim",
+            "obj": "Place"
+        }
+    },
+    "per:stateorprovinces_of_residence": false,
+    "per:title": {
+        "Leadership": {
+            "LUs": true,
+            "subj": "Leader",
+            "obj": "Role"
+        },
+        "People_by_vocation": {
+            "LUs": true,
+            "subj": "Person",
+            "obj": true
+        }
+    }
+}
