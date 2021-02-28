@@ -1,0 +1,14 @@
+learner_params:
+  num_outputs:
+    ner: 798
+  embed_dim: 1024
+  hidden_size: 256
+  dropout_ratio: 0.1
+  fine_tune_layers: 12
+pos_dim: 100
+meta_lr: 0.00001
+batch_size: 16
+eval_batch_size: 20
+num_epochs: 50
+early_stopping: 3
+device: cuda:0
