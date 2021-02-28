@@ -1,0 +1,9 @@
+lr: 0.00003
+gradient_accumulation_steps: 1
+num_epochs: 20
+early_stopping: 3
+device: cuda:0
+stamp: spanbert-squadv2-withouttarget
+base_path: models/args_withouttarget
+# trained_learner: model-spanbert-squadv2-withouttarget.h5
+train: True
